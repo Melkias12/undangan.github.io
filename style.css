@@ -1,5 +1,5 @@
 :root {
-  --pink: #f14e95;
+  --pink: #ff0000;
   --bg: #0e0e0e;
   --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
 }
@@ -7,7 +7,6 @@
 body {
   font-size: 1.2rem;
   font-family: "Work Sans", sans-serif;
-  min-height: 4000px;
 }
 
 .hero::before {
@@ -17,7 +16,9 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(Img/Background.jpeg);
+  background-image: url(Img/Contoh\ sampul.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   z-index: -1;
   filter: grayscale();
@@ -48,7 +49,9 @@ body {
 }
 
 .simply-countdown-cyber {
-  padding-bottom: 15rem;
+  padding-bottom: 3rem;
+  padding-top: 5rem;
+  justify-content: center;
 }
 
 .hero a {
@@ -82,9 +85,16 @@ body {
   text-transform: uppercase;
 }
 
+.bodynav {
+  padding-right: 40px;
+}
+
 .home {
-  background-image: url(Img/bg.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.505), rgba(0, 0, 0, 0.505)),
+    url(Img/8.-Pa-Lolo-Tabang-Ukiran-Toraja.jpg.webp);
   background-size: cover;
+  background-repeat: repeat;
+  background-size: 10rem;
   min-height: 100vh;
   margin-top: -6rem;
   padding-top: 15rem;
@@ -103,14 +113,16 @@ body {
 }
 
 .home h3 {
-  color: #444;
+  color: white;
+  text-shadow: black;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
 .home p {
   font-size: 1.1rem;
-  color: #666;
+  color: white;
+  text-shadow: black;
 }
 
 .home .couple {
@@ -145,7 +157,11 @@ body {
 }
 
 .info {
-  background-color: var(--bg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.505), rgba(0, 0, 0, 0.505)),
+    url(Img/38.-PaTangke-Lumu-Dierong-Ukiran-Toraja.jpg.webp);
+  background-size: cover;
+  background-repeat: repeat;
+  background-size: 10rem;
   color: white;
   padding-top: 10rem;
   padding-bottom: 8rem;
@@ -310,7 +326,11 @@ body {
 }
 
 .rsvp {
-  background-color: var(--bg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.505), rgba(0, 0, 0, 0.505)),
+    url(Img/40.-PaTukku-Pare-Ukiran-Toraja.jpg.webp);
+  background-size: cover;
+  background-repeat: repeat;
+  background-size: 10rem;
 }
 
 .rsvp h2 {
@@ -335,6 +355,16 @@ body {
   background-color: white;
   color: var(--pink);
   border: 1px solid white;
+}
+
+.calendar-btn {
+  background-color: var(--pink); /* Merah Marun/Terakota */
+  color: #fff;
+}
+
+.calendar-btn:hover {
+  background-color: #af1200;
+  transform: translateY(-2px);
 }
 
 footer {
@@ -446,8 +476,13 @@ footer li {
     font-size: 2rem;
     text-align: center;
   }
+
   .sticky-top {
     overflow: hidden;
+    padding-right: 220px;
+  }
+
+  .offcanvas {
   }
 
   .timeline li .timeline-image {
@@ -457,9 +492,14 @@ footer li {
 }
 
 /* Mobile Phone */
-@media (max-width: 576px) {
+@media (max-width: 390px) {
   html {
-    font-size: 60%;
+    font-size: 50%;
+  }
+
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
   }
 
   .simply-countdown-cyber {
